@@ -28,18 +28,20 @@ public class LC3110{
     String s = "hello";
     int answer = 0;
     for(int i=0;i<s.length()-1;i++){
-        char a = s.charAt(i);
-        char b = s.charAt(i+1);
-       int temp = Math.abs(a-b);
+        char current = s.charAt(i);
+        char next = s.charAt(i+1);
+       int temp = Math.abs(current-next);
        answer += temp;
 
     }
-     System.out.println(answer);
+     System.out.println("Answer : "+answer);
 
   //SimpleWay
   int answer2 = 0;
      for(int i=0;i<s.length()-1;i++){
-        answer2 += Math.abs(s.charAt(i)-s.charAt(i+1));
+         int current = s.charAt(i);
+         int next = s.charAt(i+1);
+        answer2 += Math.abs(current-next);
      }
      System.out.println("Simple Way Answer is : "+ answer2);
     }
