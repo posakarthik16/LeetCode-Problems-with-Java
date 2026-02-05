@@ -51,17 +51,17 @@ public class LC2011 {
         //SOLUTION   Expected Output : 1;
 
 
-        int answer = 0;
+        int x = 0;
         for(int i=0;i<operations.length;i++){
             String temp = operations[i];
 
             if(temp.equals("X++")  ||  temp.equals("++X")){
-                answer++;
+                x++;
             }else{
-                answer--;
+                x--;
             }
         }
 
-        System.out.println(answer);
+        System.out.println(x);
     }
 }
